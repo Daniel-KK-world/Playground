@@ -1,4 +1,6 @@
 #MY PYTHON PLAYGROUND
+
+##
 well if I hit a block on what project to do next or it's kind of a secret I just like to play around 
 with anything at all mostly random. 
 I am stuck with tkinter for the time being. 
