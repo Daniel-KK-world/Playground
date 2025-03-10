@@ -11,7 +11,7 @@ def convert_pdf_to_word(pdf_path, word_path):
     cv.close()
 
 # Example usage
-pdf_path = r"C:\Users\user\Desktop\Playground\BGEC 103 WEEK 5-BUSINESS LETTERS.txt.pptx"  # Ensure this is a PDF file
-word_path = "week5.docx"  # Desired output Word file
+pdf_path = r"C:\Users\user\Desktop\Playground\GROUP 31 PROJECT CORRECTION.pdf"  # Ensure this is a PDF file
+word_path = "Group 31 Project correction.docx"  # Desired output Word file
 
 convert_pdf_to_word(pdf_path, word_path)
