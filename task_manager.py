@@ -10,14 +10,31 @@ def show_task(tasks):
     if not tasks:
         print("No tasks yet")
     else:
+        print("Your Tasks")
         for i, task in enumerate(tasks, 1):
             print(f"{i}.task")
 
-def complete_task(): 
+def complete_task(tasks): 
     #delete the task from storage 
-    pass 
+    show_task()
+    
+    try:
+        index = int(input("Please the Enter the id of the task you have completed: ")) - 1 
+        if 0<= index <= len(tasks):
+            remove_tasks = tasks.pop(index)
+            print('Task removed')
+        else:
+            print("Invalid Id ):")
+    except ValueError 
+        print("Please enter a valid number")
+         
     
 def main():
-    #ask the user for input and call the functions. 
+    #calling the functions 
     tasks = []
-    pass 
+    
+    while True:
+        print("\nOptions: 1) Add Task  2) View Tasks  3) Complete Task  4) Exit")
+        choice = input("Choose an option: ")
+        
+        
