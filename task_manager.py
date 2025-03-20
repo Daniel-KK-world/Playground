@@ -25,7 +25,7 @@ def complete_task(tasks):
             print('Task removed')
         else:
             print("Invalid Id ):")
-    except ValueError 
+    except ValueError: 
         print("Please enter a valid number")
          
     
@@ -35,6 +35,17 @@ def main():
     
     while True:
         print("\nOptions: 1) Add Task  2) View Tasks  3) Complete Task  4) Exit")
-        choice = input("Choose an option: ")
-        
-        
+        choice = int(input("Choose an option: "))
+        if choice == 1:
+            add_task(tasks)
+        elif choice == 2:
+            show_task(tasks)
+        elif choice == 3: 
+            complete_task(tasks)
+        elif choice == 4:
+            print("Goodbye lazy! ")
+            break 
+        else:
+            print("Please choode a valid option")
+            
+main()
