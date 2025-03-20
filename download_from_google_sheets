@@ -1,0 +1,31 @@
+import gspread
+import requests
+import os
+from oauth2client.service_account import ServiceAccountCredentials
+
+# Google Sheets API setup
+scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+creds = ServiceAccountCredentials.from_json_keyfile_name("your_credentials.json", scope)
+client = gspread.authorize(creds)
+
+# Open your sheet
+spreadsheet = client.open("Ghana CEO and Industrial Awards (Responses2)")
+sheet = spreadsheet.sheet1  # Change if using another sheet
+
+# Get image URLs and names
+image_urls = sheet.col_values(24)[1:]  # Column X (24th column)
+image_names = sheet.col_values(25)[1:]  # Column Y (25th column)
+
+# Make a folder for the images
+if not os.path.exists("images"):
+    os.mkdir("images")
+
+# Download images with names
+for i, (url, name) in enumerate(zip(image_urls, image_names)):
+    if url:
+        safe_name = "".join([c if c.isalnum() or c in "-_" else "_" for c in name])  # Remove unsafe characters
+        response = requests.get(url)
+        with open(f"images/{safe_name}.jpg", "wb") as file:
+            file.write(response.content)
+
+print("Download complete!")

@@ -15,3 +15,4 @@ pdf_path = r"C:\Users\user\Desktop\Playground\GROUP 31 PROJECT CORRECTION.pdf"  
 word_path = "Group 31 Project correction.docx"  # Desired output Word file
 
 convert_pdf_to_word(pdf_path, word_path)
+
