@@ -4,6 +4,7 @@ def add_task(tasks):
     #add in the task 
     task = input("Please input your task ")
     tasks.append(task)
+    print(f"Task '{task}' added ")   
 
 def show_task(tasks):
     #we are going to display all the tasks we have. 
@@ -12,11 +13,11 @@ def show_task(tasks):
     else:
         print("Your Tasks")
         for i, task in enumerate(tasks, 1):
-            print(f"{i}.task")
+            print(f"{i}.{task}")
 
 def complete_task(tasks): 
     #delete the task from storage 
-    show_task()
+    show_task(tasks)
     
     try:
         index = int(input("Please the Enter the id of the task you have completed: ")) - 1 
@@ -31,11 +32,12 @@ def complete_task(tasks):
     
 def main():
     #calling the functions 
+    running = True
     tasks = []
     
-    while True:
+    while running:
         print("\nOptions: 1) Add Task  2) View Tasks  3) Complete Task  4) Exit")
-        choice = int(input("Choose an option: "))
+        choice = int((input("Choose an option: ")))   
         if choice == 1:
             add_task(tasks)
         elif choice == 2:
@@ -44,7 +46,7 @@ def main():
             complete_task(tasks)
         elif choice == 4:
             print("Goodbye lazy! ")
-            break 
+            running = False 
         else:
             print("Please choode a valid option")
             
