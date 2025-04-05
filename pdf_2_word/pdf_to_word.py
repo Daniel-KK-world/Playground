@@ -10,7 +10,7 @@ def convert_pdf_to_word(pdf_path, word_path):
     finally:
         cv.close()
 
-pdf_path = r"pdf_2_word\CHAPTER4 (3).pdf"
-word_path = r"pdf_2_word\CHAPTER 4.docx"  # Use raw string (or double backslashes)
+pdf_path = r"pdf_2_word\CHAPTER4.pdf"
+word_path = r"pdf_2_word\CHAPTER 4.docx" 
 
 convert_pdf_to_word(pdf_path, word_path)
