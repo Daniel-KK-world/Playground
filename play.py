@@ -22,6 +22,7 @@ def click():
         #print('I like pie too')
     #else: 
         #print('Y do u not like pie?')
+    pass
 
 
 window = Tk()
