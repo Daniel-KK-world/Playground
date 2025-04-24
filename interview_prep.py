@@ -1,9 +1,17 @@
-def print_fibonacci_sequence(n):
+def get_prime(n):
     if n < 0:
-        raise ValueError("Input must be non-negative")
-    a, b = 0, 1
-    for _ in range(n + 1):  # +1 to include the n-th term
-        print(a, end=" ")
-        a, b = b, a + b
+        raise ValueError("Input must be a non-negative number")
+    
+    primes = []
+    for num in range(2, n + 1):  # Check numbers from 2 to n
+        is_prime = True
+        for i in range(2, int(num ** 0.5) + 1):  # Check divisors up to sqrt(num)
+            if num % i == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(num)
+    return primes
 
-print_fibonacci_sequence(5)  # Output: 0 1 1 2 3 5
+# Example usage
+print(get_prime(10))  # Output: [2, 3, 5, 7]
