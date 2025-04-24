@@ -1,11 +1,8 @@
-word = "madam"
+def get_factorial(num):
+     factorial = 1 
+     while num > 1:
+          factorial *= num 
+          num -= 1
+          print(factorial) 
 
-def check_palindrome(word):
-     word.lower()
-     if word == word[::-1]:
-          print("Yes is palindrome")
-     else: 
-          print("No is not palindrome") 
-     
-     
-check_palindrome(word)
+get_factorial(5)
