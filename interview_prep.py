@@ -1,6 +1,12 @@
-def get_odd(nums):
-    for number in nums: 
-         if number%2 != 0:
-          print(number)
-nums = [1,2,3,4,5]       
-get_odd(nums)
+nums = [2, 7, 11, 15]
+target = 9  
+
+def two_sum(nums, target):
+    set = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in set:
+            return complement, num
+        set[num] = i
+    
+print(two_sum(nums, 9))
