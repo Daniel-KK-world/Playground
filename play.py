@@ -1,34 +1,30 @@
-from tkinter import* 
-from tkinter import messagebox
-def click():
-    #messagebox.showinfo(title='This is an info messagebox', message="You are a person")
-    #messagebox.showwarning(title='This is a warning msg', message='The end is near')
-    #messagebox.showerror(title='This is an error message', message='something went wrong :(' )
-    
-    #if messagebox.askokcancel(title='ask ok cancel', message='Do u want to do the thing? '):
-        #print('You did a thing')
-    #else:
-        #print('You cancelled a thing.')
-    #if messagebox.askretrycancel(title='ask retry cancel', message='Do you want to retry the thing?'):
-        #print('You retried a thing')
-    #else: 
-        #print("You cancelled a thing.")
-    #if messagebox.askyesno(title='ask yes or no', message='Do you like cake?'):
-        #print('I like cake too.')
-    #else:
-        #print('why do u not like cake?')
-    #answer = messagebox.askquestion(title='ask question', message='Do u like pie?')
-    #if answer == 'yes':
-        #print('I like pie too')
-    #else: 
-        #print('Y do u not like pie?')
-    pass
+#write me a function that peforms addition of two numbers
 
+def add_numbers(a, b):
+    return a + b
 
-window = Tk()
+#now function that performs subtraction of two numbers
+def subtract_numbers(a, b):
+    return a - b
 
+#function that performs multiplication of two numbers
+def multiply_numbers(a, b):
+    return a * b
 
-button = Button(window, command=click, text='click me')
-button.pack()
+#now write me unit tests for these functions
+import unittest
+class TestMathFunctions(unittest.TestCase):
+    def test_add_numbers(self):
+        self.assertEqual(add_numbers(2, 3), 5)
+        self.assertEqual(add_numbers(-1, 1), 0)
+        self.assertEqual(add_numbers(0, 0), 0)
 
-window.mainloop()
+    def test_subtract_numbers(self):
+        self.assertEqual(subtract_numbers(5, 3), 2)
+        self.assertEqual(subtract_numbers(0, 1), -1)
+        self.assertEqual(subtract_numbers(-1, -1), 0)
+
+    def test_multiply_numbers(self):
+        self.assertEqual(multiply_numbers(2, 3), 6)
+        self.assertEqual(multiply_numbers(-1, 1), -1)
+        self.assertEqual(multiply_numbers(0, 5), 0)

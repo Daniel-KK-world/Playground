@@ -1,0 +1,550 @@
+[
+    {
+        "label": "Converter",
+        "importPath": "pdf2docx",
+        "description": "pdf2docx",
+        "isExtraImport": true,
+        "detail": "pdf2docx",
+        "documentation": {}
+    },
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "convert_pdf_to_word",
+        "kind": 2,
+        "importPath": "pdf_2_word.pdf_to_word",
+        "description": "pdf_2_word.pdf_to_word",
+        "peekOfCode": "def convert_pdf_to_word(pdf_path, word_path):\n    try:\n        cv = Converter(pdf_path)\n        cv.convert(word_path, start=0, end=None)\n        print(f\"Successfully converted {pdf_path} to {word_path}\")\n    except Exception as e:\n        print(f\"Conversion failed: {e}\")\n    finally:\n        cv.close()\npdf_path = r\"pdf_2_word\\CHAPTER4.pdf\"",
+        "detail": "pdf_2_word.pdf_to_word",
+        "documentation": {}
+    },
+    {
+        "label": "pdf_path",
+        "kind": 5,
+        "importPath": "pdf_2_word.pdf_to_word",
+        "description": "pdf_2_word.pdf_to_word",
+        "peekOfCode": "pdf_path = r\"pdf_2_word\\CHAPTER4.pdf\"\nword_path = r\"pdf_2_word\\CHAPTER 4.docx\" \nconvert_pdf_to_word(pdf_path, word_path)",
+        "detail": "pdf_2_word.pdf_to_word",
+        "documentation": {}
+    },
+    {
+        "label": "word_path",
+        "kind": 5,
+        "importPath": "pdf_2_word.pdf_to_word",
+        "description": "pdf_2_word.pdf_to_word",
+        "peekOfCode": "word_path = r\"pdf_2_word\\CHAPTER 4.docx\" \nconvert_pdf_to_word(pdf_path, word_path)",
+        "detail": "pdf_2_word.pdf_to_word",
+        "documentation": {}
+    },
+    {
+        "label": "submit",
+        "kind": 2,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "def submit():\n    food = []\n    for index in listbox.curselection():\n        food.insert(index, listbox.get(index))\n    print(\"You have orderd: \")\n    for index in food:\n        print(index)\n    #print(listbox.get(listbox.curselection()))\ndef add():\n    listbox.insert(listbox.size(), entryBox.get())",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "def add():\n    listbox.insert(listbox.size(), entryBox.get())\n    listbox.config(height=listbox.size())\ndef delete():\n    for index in reversed(listbox.curselection()):\n        listbox.delete(index)\n    listbox.config(height=listbox.size())\nwindow = Tk()\nlistbox = Listbox(window,\n                  bg='wheat',",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "delete",
+        "kind": 2,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "def delete():\n    for index in reversed(listbox.curselection()):\n        listbox.delete(index)\n    listbox.config(height=listbox.size())\nwindow = Tk()\nlistbox = Listbox(window,\n                  bg='wheat',\n                  font=('Constantia',35),\n                  width=12,\n                  selectmode= MULTIPLE",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "window",
+        "kind": 5,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "window = Tk()\nlistbox = Listbox(window,\n                  bg='wheat',\n                  font=('Constantia',35),\n                  width=12,\n                  selectmode= MULTIPLE\n                  )\nlistbox.pack()\nlistbox.insert(1,\"pizza\", )\nlistbox.insert(2,\"pasta\", )",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "listbox",
+        "kind": 5,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "listbox = Listbox(window,\n                  bg='wheat',\n                  font=('Constantia',35),\n                  width=12,\n                  selectmode= MULTIPLE\n                  )\nlistbox.pack()\nlistbox.insert(1,\"pizza\", )\nlistbox.insert(2,\"pasta\", )\nlistbox.insert(3,\"garlic bread\", )",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "entryBox",
+        "kind": 5,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "entryBox = Entry(window)\nentryBox.pack()\nsubmitButton = Button(window, text=\"submit\", command=submit)\nsubmitButton.pack()\naddButton = Button(window, text='add', command=add)\naddButton.pack()\ndeleteButton = Button(window, text='delete', command=delete)\ndeleteButton.pack()\nwindow.mainloop()",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "submitButton",
+        "kind": 5,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "submitButton = Button(window, text=\"submit\", command=submit)\nsubmitButton.pack()\naddButton = Button(window, text='add', command=add)\naddButton.pack()\ndeleteButton = Button(window, text='delete', command=delete)\ndeleteButton.pack()\nwindow.mainloop()",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "addButton",
+        "kind": 5,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "addButton = Button(window, text='add', command=add)\naddButton.pack()\ndeleteButton = Button(window, text='delete', command=delete)\ndeleteButton.pack()\nwindow.mainloop()",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "deleteButton",
+        "kind": 5,
+        "importPath": "restaurant_menu.resturant_menu",
+        "description": "restaurant_menu.resturant_menu",
+        "peekOfCode": "deleteButton = Button(window, text='delete', command=delete)\ndeleteButton.pack()\nwindow.mainloop()",
+        "detail": "restaurant_menu.resturant_menu",
+        "documentation": {}
+    },
+    {
+        "label": "add_task",
+        "kind": 2,
+        "importPath": "task_manager.task_manager",
+        "description": "task_manager.task_manager",
+        "peekOfCode": "def add_task(tasks):\n    #add in the task \n    task = input(\"Please input your task \")\n    tasks.append(task)\n    print(f\"Task '{task}' added \")   \ndef show_task(tasks):\n    #we are going to display all the tasks we have. \n    if not tasks:\n        print(\"No tasks yet\")\n    else:",
+        "detail": "task_manager.task_manager",
+        "documentation": {}
+    },
+    {
+        "label": "show_task",
+        "kind": 2,
+        "importPath": "task_manager.task_manager",
+        "description": "task_manager.task_manager",
+        "peekOfCode": "def show_task(tasks):\n    #we are going to display all the tasks we have. \n    if not tasks:\n        print(\"No tasks yet\")\n    else:\n        print(\"Your Tasks\")\n        for i, task in enumerate(tasks, 1):\n            print(f\"{i}.{task}\")\ndef complete_task(tasks): \n    #delete the task from storage ",
+        "detail": "task_manager.task_manager",
+        "documentation": {}
+    },
+    {
+        "label": "complete_task",
+        "kind": 2,
+        "importPath": "task_manager.task_manager",
+        "description": "task_manager.task_manager",
+        "peekOfCode": "def complete_task(tasks): \n    #delete the task from storage \n    show_task(tasks)\n    try:\n        index = int(input(\"Please the Enter the id of the task you have completed: \")) - 1 \n        if 0<= index <= len(tasks):\n            remove_tasks = tasks.pop(index)\n            print('Task removed')\n        else:\n            print(\"Invalid Id ):\")",
+        "detail": "task_manager.task_manager",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "task_manager.task_manager",
+        "description": "task_manager.task_manager",
+        "peekOfCode": "def main():\n    #calling the functions \n    running = True\n    tasks = []\n    while running:\n        print(\"\\nOptions: 1) Add Task  2) View Tasks  3) Complete Task  4) Exit\")\n        choice = int((input(\"Choose an option: \")))   \n        if choice == 1:\n            add_task(tasks)\n        elif choice == 2:",
+        "detail": "task_manager.task_manager",
+        "documentation": {}
+    },
+    {
+        "label": "square_rectangle",
+        "kind": 2,
+        "importPath": "Area_calculator",
+        "description": "Area_calculator",
+        "peekOfCode": "def square_rectangle(length, width):\n    print(length * width)\ndef triangle(base, height):\n    print(0.5 * base * height)\ndef circle(radius):\n    print(3.14 * radius**)\ndef cube_cuboiod(length, breadth, height):\n    print(length * breadth * height)",
+        "detail": "Area_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "triangle",
+        "kind": 2,
+        "importPath": "Area_calculator",
+        "description": "Area_calculator",
+        "peekOfCode": "def triangle(base, height):\n    print(0.5 * base * height)\ndef circle(radius):\n    print(3.14 * radius**)\ndef cube_cuboiod(length, breadth, height):\n    print(length * breadth * height)",
+        "detail": "Area_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "circle",
+        "kind": 2,
+        "importPath": "Area_calculator",
+        "description": "Area_calculator",
+        "peekOfCode": "def circle(radius):\n    print(3.14 * radius**)\ndef cube_cuboiod(length, breadth, height):\n    print(length * breadth * height)",
+        "detail": "Area_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "cube_cuboiod",
+        "kind": 2,
+        "importPath": "Area_calculator",
+        "description": "Area_calculator",
+        "peekOfCode": "def cube_cuboiod(length, breadth, height):\n    print(length * breadth * height)",
+        "detail": "Area_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "Calculator",
+        "kind": 6,
+        "importPath": "calculator",
+        "description": "calculator",
+        "peekOfCode": "class Calculator:\n    def __init__(self):\n        self.num1 = input(\"Please enter num1: \")\n        self.num2 = input(\"Please enter num2: \")\n    def add_numbers(self):\n        print(self.num1 + self.num2)\n    def subtract_numbers(self):\n        print(self.num1 - self.num2) \n    def multiply_numbers(self):\n        print(self.num1 * self.num2)",
+        "detail": "calculator",
+        "documentation": {}
+    },
+    {
+        "label": "Dino",
+        "kind": 6,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "class Dino:\n    def __init__(self):\n        self.x = 50\n        self.y = GROUND_HEIGHT - 50\n        self.jump_velocity = 0\n        self.is_jumping = False\n        self.image = load_image(\"dino\", 0.8)\n        self.rect = self.image.get_rect(topleft=(self.x, self.y))\n    def jump(self):\n        if not self.is_jumping:",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "Cactus",
+        "kind": 6,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "class Cactus:\n    def __init__(self):\n        self.width = random.randint(20, 40)\n        self.height = random.randint(30, 50)\n        self.x = SCREEN_WIDTH\n        self.y = GROUND_HEIGHT - self.height\n        self.speed = 7\n        self.image = pygame.Surface((self.width, self.height))\n        self.image.fill((0, 100, 0))  # Green cactus\n        self.rect = self.image.get_rect(topleft=(self.x, self.y))",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "load_image",
+        "kind": 2,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "def load_image(name, scale=1):\n    img = pygame.Surface((50, 50), pygame.SRCALPHA)\n    pygame.draw.rect(img, BLACK, (0, 0, 50, 50))  # Placeholder for dino\n    pygame.draw.rect(img, (100, 100, 100), (10, 10, 30, 30))  # Dino \"eyes\"\n    return pygame.transform.scale(img, (50 * scale, 50 * scale))\n# Game variables\nclass Dino:\n    def __init__(self):\n        self.x = 50\n        self.y = GROUND_HEIGHT - 50",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "reset_game",
+        "kind": 2,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "def reset_game():\n    global dino, cacti, score, game_over\n    dino = Dino()\n    cacti = []\n    score = 0\n    game_over = False\n# Main game loop\nwhile True:\n    for event in pygame.event.get():\n        if event.type == pygame.QUIT:",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "SCREEN_WIDTH",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "SCREEN_WIDTH = 800\nSCREEN_HEIGHT = 300\nGROUND_HEIGHT = 250\nWHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nFPS = 60\n# Setup screen\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Chrome Dino Game\")\nclock = pygame.time.Clock()",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "SCREEN_HEIGHT",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "SCREEN_HEIGHT = 300\nGROUND_HEIGHT = 250\nWHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nFPS = 60\n# Setup screen\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Chrome Dino Game\")\nclock = pygame.time.Clock()\n# Load images (replace with your own paths or use rectangles)",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "GROUND_HEIGHT",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "GROUND_HEIGHT = 250\nWHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nFPS = 60\n# Setup screen\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Chrome Dino Game\")\nclock = pygame.time.Clock()\n# Load images (replace with your own paths or use rectangles)\ndef load_image(name, scale=1):",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "WHITE",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "WHITE = (255, 255, 255)\nBLACK = (0, 0, 0)\nFPS = 60\n# Setup screen\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Chrome Dino Game\")\nclock = pygame.time.Clock()\n# Load images (replace with your own paths or use rectangles)\ndef load_image(name, scale=1):\n    img = pygame.Surface((50, 50), pygame.SRCALPHA)",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "BLACK",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "BLACK = (0, 0, 0)\nFPS = 60\n# Setup screen\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Chrome Dino Game\")\nclock = pygame.time.Clock()\n# Load images (replace with your own paths or use rectangles)\ndef load_image(name, scale=1):\n    img = pygame.Surface((50, 50), pygame.SRCALPHA)\n    pygame.draw.rect(img, BLACK, (0, 0, 50, 50))  # Placeholder for dino",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "FPS",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "FPS = 60\n# Setup screen\nscreen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Chrome Dino Game\")\nclock = pygame.time.Clock()\n# Load images (replace with your own paths or use rectangles)\ndef load_image(name, scale=1):\n    img = pygame.Surface((50, 50), pygame.SRCALPHA)\n    pygame.draw.rect(img, BLACK, (0, 0, 50, 50))  # Placeholder for dino\n    pygame.draw.rect(img, (100, 100, 100), (10, 10, 30, 30))  # Dino \"eyes\"",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\npygame.display.set_caption(\"Chrome Dino Game\")\nclock = pygame.time.Clock()\n# Load images (replace with your own paths or use rectangles)\ndef load_image(name, scale=1):\n    img = pygame.Surface((50, 50), pygame.SRCALPHA)\n    pygame.draw.rect(img, BLACK, (0, 0, 50, 50))  # Placeholder for dino\n    pygame.draw.rect(img, (100, 100, 100), (10, 10, 30, 30))  # Dino \"eyes\"\n    return pygame.transform.scale(img, (50 * scale, 50 * scale))\n# Game variables",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "clock",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "clock = pygame.time.Clock()\n# Load images (replace with your own paths or use rectangles)\ndef load_image(name, scale=1):\n    img = pygame.Surface((50, 50), pygame.SRCALPHA)\n    pygame.draw.rect(img, BLACK, (0, 0, 50, 50))  # Placeholder for dino\n    pygame.draw.rect(img, (100, 100, 100), (10, 10, 30, 30))  # Dino \"eyes\"\n    return pygame.transform.scale(img, (50 * scale, 50 * scale))\n# Game variables\nclass Dino:\n    def __init__(self):",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "dino",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "dino = Dino()\ncacti = []\nspawn_timer = 0\nscore = 0\ngame_over = False\nfont = pygame.font.SysFont(None, 36)\ndef reset_game():\n    global dino, cacti, score, game_over\n    dino = Dino()\n    cacti = []",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "cacti",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "cacti = []\nspawn_timer = 0\nscore = 0\ngame_over = False\nfont = pygame.font.SysFont(None, 36)\ndef reset_game():\n    global dino, cacti, score, game_over\n    dino = Dino()\n    cacti = []\n    score = 0",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "spawn_timer",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "spawn_timer = 0\nscore = 0\ngame_over = False\nfont = pygame.font.SysFont(None, 36)\ndef reset_game():\n    global dino, cacti, score, game_over\n    dino = Dino()\n    cacti = []\n    score = 0\n    game_over = False",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "score",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "score = 0\ngame_over = False\nfont = pygame.font.SysFont(None, 36)\ndef reset_game():\n    global dino, cacti, score, game_over\n    dino = Dino()\n    cacti = []\n    score = 0\n    game_over = False\n# Main game loop",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "game_over",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "game_over = False\nfont = pygame.font.SysFont(None, 36)\ndef reset_game():\n    global dino, cacti, score, game_over\n    dino = Dino()\n    cacti = []\n    score = 0\n    game_over = False\n# Main game loop\nwhile True:",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "font",
+        "kind": 5,
+        "importPath": "dino",
+        "description": "dino",
+        "peekOfCode": "font = pygame.font.SysFont(None, 36)\ndef reset_game():\n    global dino, cacti, score, game_over\n    dino = Dino()\n    cacti = []\n    score = 0\n    game_over = False\n# Main game loop\nwhile True:\n    for event in pygame.event.get():",
+        "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "second_largest",
+        "kind": 2,
+        "importPath": "find_duplicates",
+        "description": "find_duplicates",
+        "peekOfCode": "def second_largest(nums):\n    i = 0\n    sorted_list =sorted(nums)\n    print(sorted_list[i-2])\nnums = [1,2,3,4]\nprint(second_largest(nums))",
+        "detail": "find_duplicates",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "find_duplicates",
+        "description": "find_duplicates",
+        "peekOfCode": "nums = [1,2,3,4]\nprint(second_largest(nums))",
+        "detail": "find_duplicates",
+        "documentation": {}
+    },
+    {
+        "label": "forex_trader",
+        "kind": 2,
+        "importPath": "interview_prep",
+        "description": "interview_prep",
+        "peekOfCode": "def forex_trader(prices):\n    if len(prices) < 2:  # Edge case: Not enough days to trade\n        return 0\n    min_price = float(\"inf\")\n    max_profit = 0\n    for price in prices:\n        if price < min_price:\n            min_price = price \n        current_profit = price - min_price\n        if current_profit > max_profit:",
+        "detail": "interview_prep",
+        "documentation": {}
+    },
+    {
+        "label": "prices",
+        "kind": 5,
+        "importPath": "interview_prep",
+        "description": "interview_prep",
+        "peekOfCode": "prices = [7, 1, 5, 3, 6, 4]\n# Buy at 1 (Day 2), sell at 6 (Day 5)\n# Profit = 5 \ndef forex_trader(prices):\n    if len(prices) < 2:  # Edge case: Not enough days to trade\n        return 0\n    min_price = float(\"inf\")\n    max_profit = 0\n    for price in prices:\n        if price < min_price:",
+        "detail": "interview_prep",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "make_repo",
+        "description": "make_repo",
+        "peekOfCode": "BASE_DIR = \"TECH-SPHERE\"\n# Folder and file structure\nstructure = {\n    \"explainers-non-code\": {\n        \"A-basics\": [\"variables.md\", \"data-types.md\", \"operators.md\"],\n        \"B-control-flow\": [],\n        \"C-functions-modularity\": [],\n        \"D-data-structures\": [],\n        \"E-algorithms\": [],\n        \"F-advanced-basics\": [],",
+        "detail": "make_repo",
+        "documentation": {}
+    },
+    {
+        "label": "structure",
+        "kind": 5,
+        "importPath": "make_repo",
+        "description": "make_repo",
+        "peekOfCode": "structure = {\n    \"explainers-non-code\": {\n        \"A-basics\": [\"variables.md\", \"data-types.md\", \"operators.md\"],\n        \"B-control-flow\": [],\n        \"C-functions-modularity\": [],\n        \"D-data-structures\": [],\n        \"E-algorithms\": [],\n        \"F-advanced-basics\": [],\n    },\n    \"tier-1-baby-steps\": {",
+        "detail": "make_repo",
+        "documentation": {}
+    },
+    {
+        "label": "root_files",
+        "kind": 5,
+        "importPath": "make_repo",
+        "description": "make_repo",
+        "peekOfCode": "root_files = [\"README.md\", \"CONTRIBUTING.md\"]\n# Create the base directory\nos.makedirs(BASE_DIR, exist_ok=True)\n# Create root files\nfor file in root_files:\n    with open(os.path.join(BASE_DIR, file), \"w\") as f:\n        f.write(f\"# {file.replace('.md', '').capitalize()}\\n\")\n# Create folder structure\nfor main_folder, subfolders in structure.items():\n    for subfolder, files in subfolders.items():",
+        "detail": "make_repo",
+        "documentation": {}
+    },
+    {
+        "label": "TestMathFunctions",
+        "kind": 6,
+        "importPath": "play",
+        "description": "play",
+        "peekOfCode": "class TestMathFunctions(unittest.TestCase):\n    def test_add_numbers(self):\n        self.assertEqual(add_numbers(2, 3), 5)\n        self.assertEqual(add_numbers(-1, 1), 0)\n        self.assertEqual(add_numbers(0, 0), 0)\n    def test_subtract_numbers(self):\n        self.assertEqual(subtract_numbers(5, 3), 2)\n        self.assertEqual(subtract_numbers(0, 1), -1)\n        self.assertEqual(subtract_numbers(-1, -1), 0)\n    def test_multiply_numbers(self):",
+        "detail": "play",
+        "documentation": {}
+    },
+    {
+        "label": "add_numbers",
+        "kind": 2,
+        "importPath": "play",
+        "description": "play",
+        "peekOfCode": "def add_numbers(a, b):\n    return a + b\n#now function that performs subtraction of two numbers\ndef subtract_numbers(a, b):\n    return a - b\n#function that performs multiplication of two numbers\ndef multiply_numbers(a, b):\n    return a * b\n#now write me unit tests for these functions\nimport unittest",
+        "detail": "play",
+        "documentation": {}
+    },
+    {
+        "label": "subtract_numbers",
+        "kind": 2,
+        "importPath": "play",
+        "description": "play",
+        "peekOfCode": "def subtract_numbers(a, b):\n    return a - b\n#function that performs multiplication of two numbers\ndef multiply_numbers(a, b):\n    return a * b\n#now write me unit tests for these functions\nimport unittest\nclass TestMathFunctions(unittest.TestCase):\n    def test_add_numbers(self):\n        self.assertEqual(add_numbers(2, 3), 5)",
+        "detail": "play",
+        "documentation": {}
+    },
+    {
+        "label": "multiply_numbers",
+        "kind": 2,
+        "importPath": "play",
+        "description": "play",
+        "peekOfCode": "def multiply_numbers(a, b):\n    return a * b\n#now write me unit tests for these functions\nimport unittest\nclass TestMathFunctions(unittest.TestCase):\n    def test_add_numbers(self):\n        self.assertEqual(add_numbers(2, 3), 5)\n        self.assertEqual(add_numbers(-1, 1), 0)\n        self.assertEqual(add_numbers(0, 0), 0)\n    def test_subtract_numbers(self):",
+        "detail": "play",
+        "documentation": {}
+    },
+    {
+        "label": "get_weather",
+        "kind": 2,
+        "importPath": "weather",
+        "description": "weather",
+        "peekOfCode": "def get_weather(city):\n    params = {\n        'q': city,\n        'appid': API_KEY,\n        'units': 'metric'\n    }\n    try:\n        response = requests.get(BASE_URL, params=params)\n        response.raise_for_status()\n        return response.json()",
+        "detail": "weather",
+        "documentation": {}
+    },
+    {
+        "label": "display_weather",
+        "kind": 2,
+        "importPath": "weather",
+        "description": "weather",
+        "peekOfCode": "def display_weather(city):\n    weather_data = get_weather(city)\n    if weather_data:\n        temp = weather_data['main']['temp']\n        description = weather_data['weather'][0]['description']\n        print(f\"Current temperature in {city} is {temp}°C with {description}.\")\n    else:\n        print(f\"Could not retrieve weather data for {city}.\")\n#now let's write a main function to test\nif __name__ == \"__main__\":",
+        "detail": "weather",
+        "documentation": {}
+    },
+    {
+        "label": "API_KEY",
+        "kind": 5,
+        "importPath": "weather",
+        "description": "weather",
+        "peekOfCode": "API_KEY = 'your_openweathermap_api_key'  #replace with your actual API key\nBASE_URL = 'http://api.openweathermap.org/data/2.5/weather'\n#fetch weather data from openweathermap api for a given city\ndef get_weather(city):\n    params = {\n        'q': city,\n        'appid': API_KEY,\n        'units': 'metric'\n    }\n    try:",
+        "detail": "weather",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URL",
+        "kind": 5,
+        "importPath": "weather",
+        "description": "weather",
+        "peekOfCode": "BASE_URL = 'http://api.openweathermap.org/data/2.5/weather'\n#fetch weather data from openweathermap api for a given city\ndef get_weather(city):\n    params = {\n        'q': city,\n        'appid': API_KEY,\n        'units': 'metric'\n    }\n    try:\n        response = requests.get(BASE_URL, params=params)",
+        "detail": "weather",
+        "documentation": {}
+    }
+]

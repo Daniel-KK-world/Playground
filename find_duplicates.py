@@ -1,12 +1,7 @@
-def find_missing_number(nums):
-    n = len(nums)
-    nums_set = set(nums)  
-    for num in range(n+1):
-        if num not in nums_set:
-            return num
-        
-    return None
+def second_largest(nums):
+    i = 0
+    sorted_list =sorted(nums)
+    print(sorted_list[i-2])
 
-
-nums = [0, 1]
-print(find_missing_number(nums))
+nums = [1,2,3,4]
+print(second_largest(nums))
