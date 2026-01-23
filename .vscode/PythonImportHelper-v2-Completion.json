@@ -291,7 +291,7 @@
         "kind": 5,
         "importPath": "dino",
         "description": "dino",
-        "peekOfCode": "SCREEN_WIDTH = 1000\nSCREEN_HEIGHT = 600\nFPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -18\nGAME_SPEED = 7\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)",
+        "peekOfCode": "SCREEN_WIDTH = 1000\nSCREEN_HEIGHT = 600\nFPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -19\nGAME_SPEED = 9\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)",
         "detail": "dino",
         "documentation": {}
     },
@@ -300,7 +300,7 @@
         "kind": 5,
         "importPath": "dino",
         "description": "dino",
-        "peekOfCode": "SCREEN_HEIGHT = 600\nFPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -18\nGAME_SPEED = 7\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)",
+        "peekOfCode": "SCREEN_HEIGHT = 600\nFPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -19\nGAME_SPEED = 9\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)",
         "detail": "dino",
         "documentation": {}
     },
@@ -309,7 +309,7 @@
         "kind": 5,
         "importPath": "dino",
         "description": "dino",
-        "peekOfCode": "FPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -18\nGAME_SPEED = 7\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)",
+        "peekOfCode": "FPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -19\nGAME_SPEED = 9\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)",
         "detail": "dino",
         "documentation": {}
     },
@@ -318,7 +318,7 @@
         "kind": 5,
         "importPath": "dino",
         "description": "dino",
-        "peekOfCode": "GRAVITY = 0.8\nJUMP_STRENGTH = -18\nGAME_SPEED = 7\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)",
+        "peekOfCode": "GRAVITY = 0.8\nJUMP_STRENGTH = -19\nGAME_SPEED = 9\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)",
         "detail": "dino",
         "documentation": {}
     },
@@ -327,7 +327,7 @@
         "kind": 5,
         "importPath": "dino",
         "description": "dino",
-        "peekOfCode": "JUMP_STRENGTH = -18\nGAME_SPEED = 7\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)",
+        "peekOfCode": "JUMP_STRENGTH = -19\nGAME_SPEED = 9\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)",
         "detail": "dino",
         "documentation": {}
     },
@@ -336,7 +336,7 @@
         "kind": 5,
         "importPath": "dino",
         "description": "dino",
-        "peekOfCode": "GAME_SPEED = 7\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)",
+        "peekOfCode": "GAME_SPEED = 9\nOBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)",
         "detail": "dino",
         "documentation": {}
     },

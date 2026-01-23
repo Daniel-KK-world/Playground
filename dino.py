@@ -10,8 +10,8 @@ SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 600
 FPS = 60
 GRAVITY = 0.8
-JUMP_STRENGTH = -18
-GAME_SPEED = 7
+JUMP_STRENGTH = -19
+GAME_SPEED = 9
 OBSTACLE_FREQUENCY = 0.02  # Higher = more obstacles
 
 # Colors
@@ -296,7 +296,7 @@ class Game:
         
         # Draw title
         title_font = pygame.font.SysFont(None, 48)
-        title_text = title_font.render("Endless Runner - Habibi Edition", True, BLUE)
+        title_text = title_font.render("Adventures of habibi", True, BLUE)
         self.screen.blit(title_text, (SCREEN_WIDTH // 2 - title_text.get_width() // 2, 10))
         
         # Update display
