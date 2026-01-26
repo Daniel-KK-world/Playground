@@ -170,6 +170,177 @@
         "documentation": {}
     },
     {
+        "label": "Player",
+        "kind": 6,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "class Player:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n        self.width = 40\n        self.height = 60\n        self.vel_y = 0\n        self.jumping = False\n        self.color = BLUE\n        self.score = 0",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "Obstacle",
+        "kind": 6,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "class Obstacle:\n    def __init__(self, x):\n        self.x = x\n        self.width = random.randint(20, 40)\n        self.height = random.randint(30, 70)\n        self.y = SCREEN_HEIGHT - 100 - self.height\n        self.color = random.choice([RED, GREEN, YELLOW])\n        self.passed = False\n    def update(self):\n        self.x -= GAME_SPEED",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "Cloud",
+        "kind": 6,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "class Cloud:\n    def __init__(self):\n        self.x = SCREEN_WIDTH\n        self.y = random.randint(50, 200)\n        self.speed = random.uniform(0.5, 2.0)\n        self.size = random.randint(40, 80)\n    def update(self):\n        self.x -= self.speed\n    def draw(self, screen):\n        # Draw fluffy cloud",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "Game",
+        "kind": 6,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "class Game:\n    def __init__(self):\n        self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))\n        pygame.display.set_caption(\"Adventures of Habibi\")\n        self.clock = pygame.time.Clock()\n        self.font = pygame.font.SysFont(None, 36)\n        self.small_font = pygame.font.SysFont(None, 24)\n        self.reset_game()\n    def reset_game(self):\n        self.player = Player(100, SCREEN_HEIGHT - 160)",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "SCREEN_WIDTH",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "SCREEN_WIDTH = 1000\nSCREEN_HEIGHT = 600\nFPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -18\nGAME_SPEED = 8\nOBSTACLE_FREQUENCY = 0.03  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "SCREEN_HEIGHT",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "SCREEN_HEIGHT = 600\nFPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -18\nGAME_SPEED = 8\nOBSTACLE_FREQUENCY = 0.03  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "FPS",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "FPS = 60\nGRAVITY = 0.8\nJUMP_STRENGTH = -18\nGAME_SPEED = 8\nOBSTACLE_FREQUENCY = 0.03  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "GRAVITY",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "GRAVITY = 0.8\nJUMP_STRENGTH = -18\nGAME_SPEED = 8\nOBSTACLE_FREQUENCY = 0.03  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "JUMP_STRENGTH",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "JUMP_STRENGTH = -18\nGAME_SPEED = 8\nOBSTACLE_FREQUENCY = 0.03  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "GAME_SPEED",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "GAME_SPEED = 8\nOBSTACLE_FREQUENCY = 0.03  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "OBSTACLE_FREQUENCY",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "OBSTACLE_FREQUENCY = 0.03  # Higher = more obstacles\n# Colors\nSKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)\nBLACK = (30, 30, 30)",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "SKY_BLUE",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "SKY_BLUE = (135, 206, 235)\nGROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)\nBLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "GROUND_COLOR",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "GROUND_COLOR = (222, 184, 135)\nRED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)\nBLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):\n        self.x = x",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "RED",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "RED = (255, 50, 50)\nGREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)\nBLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "GREEN",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "GREEN = (50, 200, 50)\nBLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)\nBLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n        self.width = 40",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "BLUE",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "BLUE = (50, 150, 255)\nYELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)\nBLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n        self.width = 40\n        self.height = 60",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "YELLOW",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "YELLOW = (255, 255, 0)\nWHITE = (255, 255, 255)\nBLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n        self.width = 40\n        self.height = 60\n        self.vel_y = 0",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "WHITE",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "WHITE = (255, 255, 255)\nBLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n        self.width = 40\n        self.height = 60\n        self.vel_y = 0\n        self.jumping = False",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
+        "label": "BLACK",
+        "kind": 5,
+        "importPath": "task_manager.habibi",
+        "description": "task_manager.habibi",
+        "peekOfCode": "BLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n        self.width = 40\n        self.height = 60\n        self.vel_y = 0\n        self.jumping = False\n        self.color = BLUE",
+        "detail": "task_manager.habibi",
+        "documentation": {}
+    },
+    {
         "label": "add_task",
         "kind": 2,
         "importPath": "task_manager.task_manager",
