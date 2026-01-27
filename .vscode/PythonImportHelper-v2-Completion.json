@@ -35,6 +35,14 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "os",
         "kind": 6,
         "isExtraImport": true,
@@ -422,6 +430,24 @@
         "documentation": {}
     },
     {
+        "label": "dispense_water",
+        "kind": 2,
+        "importPath": "chatgpt_demo",
+        "description": "chatgpt_demo",
+        "peekOfCode": "def dispense_water(requested: Optional[str] = None) -> str:\n    if requested is None:\n        return random.choice(TEMPERATURES)\n    requested = requested.lower()\n    if requested not in TEMPERATURES:\n        raise ValueError(f\"Invalid temperature: {requested}\")\n    return requested\nif __name__ == \"__main__\":\n    try:\n        choice = input(\"Choose hot, cold, warm, or press Enter for random: \").strip()",
+        "detail": "chatgpt_demo",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPERATURES",
+        "kind": 5,
+        "importPath": "chatgpt_demo",
+        "description": "chatgpt_demo",
+        "peekOfCode": "TEMPERATURES = (\"hot\", \"cold\", \"warm\")\ndef dispense_water(requested: Optional[str] = None) -> str:\n    if requested is None:\n        return random.choice(TEMPERATURES)\n    requested = requested.lower()\n    if requested not in TEMPERATURES:\n        raise ValueError(f\"Invalid temperature: {requested}\")\n    return requested\nif __name__ == \"__main__\":\n    try:",
+        "detail": "chatgpt_demo",
+        "documentation": {}
+    },
+    {
         "label": "Player",
         "kind": 6,
         "importPath": "dino",
@@ -590,6 +616,24 @@
         "description": "dino",
         "peekOfCode": "BLACK = (30, 30, 30)\nclass Player:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n        self.width = 40\n        self.height = 60\n        self.vel_y = 0\n        self.jumping = False\n        self.color = BLUE",
         "detail": "dino",
+        "documentation": {}
+    },
+    {
+        "label": "count_even_digit_numbers",
+        "kind": 2,
+        "importPath": "even_odd",
+        "description": "even_odd",
+        "peekOfCode": "def count_even_digit_numbers(nums):\n    even_count = 0\n    for num in nums:\n        if len(str(num)) % 2 == 0:\n            even_count += 1\n    return even_count \nprint(count_even_digit_numbers(nums))",
+        "detail": "even_odd",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "even_odd",
+        "description": "even_odd",
+        "peekOfCode": "nums = [2, 3, 45, 6789, 1234, 56, 7, 89012]\ndef count_even_digit_numbers(nums):\n    even_count = 0\n    for num in nums:\n        if len(str(num)) % 2 == 0:\n            even_count += 1\n    return even_count \nprint(count_even_digit_numbers(nums))",
+        "detail": "even_odd",
         "documentation": {}
     },
     {
