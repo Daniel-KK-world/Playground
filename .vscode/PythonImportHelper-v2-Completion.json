@@ -52,15 +52,6 @@
         "documentation": {}
     },
     {
-        "label": "unittest",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "unittest",
-        "description": "unittest",
-        "detail": "unittest",
-        "documentation": {}
-    },
-    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
@@ -700,38 +691,11 @@
         "documentation": {}
     },
     {
-        "label": "TestMathFunctions",
-        "kind": 6,
-        "importPath": "play",
-        "description": "play",
-        "peekOfCode": "class TestMathFunctions(unittest.TestCase):\n    def test_add_numbers(self):\n        self.assertEqual(add_numbers(2, 3), 5)\n        self.assertEqual(add_numbers(-1, 1), 0)\n        self.assertEqual(add_numbers(0, 0), 0)\n    def test_subtract_numbers(self):\n        self.assertEqual(subtract_numbers(5, 3), 2)\n        self.assertEqual(subtract_numbers(0, 1), -1)\n        self.assertEqual(subtract_numbers(-1, -1), 0)\n    def test_multiply_numbers(self):",
-        "detail": "play",
-        "documentation": {}
-    },
-    {
-        "label": "add_numbers",
+        "label": "quiz_game",
         "kind": 2,
         "importPath": "play",
         "description": "play",
-        "peekOfCode": "def add_numbers(a, b):\n    return a + b\n#now function that performs subtraction of two numbers\ndef subtract_numbers(a, b):\n    return a - b\n#function that performs multiplication of two numbers\ndef multiply_numbers(a, b):\n    return a * b\n#now write me unit tests for these functions\nimport unittest",
-        "detail": "play",
-        "documentation": {}
-    },
-    {
-        "label": "subtract_numbers",
-        "kind": 2,
-        "importPath": "play",
-        "description": "play",
-        "peekOfCode": "def subtract_numbers(a, b):\n    return a - b\n#function that performs multiplication of two numbers\ndef multiply_numbers(a, b):\n    return a * b\n#now write me unit tests for these functions\nimport unittest\nclass TestMathFunctions(unittest.TestCase):\n    def test_add_numbers(self):\n        self.assertEqual(add_numbers(2, 3), 5)",
-        "detail": "play",
-        "documentation": {}
-    },
-    {
-        "label": "multiply_numbers",
-        "kind": 2,
-        "importPath": "play",
-        "description": "play",
-        "peekOfCode": "def multiply_numbers(a, b):\n    return a * b\n#now write me unit tests for these functions\nimport unittest\nclass TestMathFunctions(unittest.TestCase):\n    def test_add_numbers(self):\n        self.assertEqual(add_numbers(2, 3), 5)\n        self.assertEqual(add_numbers(-1, 1), 0)\n        self.assertEqual(add_numbers(0, 0), 0)\n    def test_subtract_numbers(self):",
+        "peekOfCode": "def quiz_game():\n    print(\"Welcome to the Quiz Game!\")\n    questions = {\n        \"What is the capital of France? \": \"Paris\",\n        \"What is 2 + 2? \": \"4\",\n        \"What is the largest planet in our solar system? \": \"Jupiter\"\n    }\n    score = 0\n    for question, answer in questions.items():\n        user_answer = input(question)",
         "detail": "play",
         "documentation": {}
     },

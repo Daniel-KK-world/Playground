@@ -1,30 +1,22 @@
-#write me a function that peforms addition of two numbers
+def quiz_game():
+    print("Welcome to the Quiz Game!")
+    questions = {
+        "What is the capital of France? ": "Paris",
+        "What is 2 + 2? ": "4",
+        "What is the largest planet in our solar system? ": "Jupiter"
+    }
+    
+    score = 0
+    
+    for question, answer in questions.items():
+        user_answer = input(question)
+        if user_answer.strip().lower() == answer.lower():
+            print("Correct!")
+            score += 1
+        else:
+            print(f"Wrong! The correct answer is {answer}.")
+    
+    print(f"Your final score is {score} out of {len(questions)}.")
 
-def add_numbers(a, b):
-    return a + b
-
-#now function that performs subtraction of two numbers
-def subtract_numbers(a, b):
-    return a - b
-
-#function that performs multiplication of two numbers
-def multiply_numbers(a, b):
-    return a * b
-
-#now write me unit tests for these functions
-import unittest
-class TestMathFunctions(unittest.TestCase):
-    def test_add_numbers(self):
-        self.assertEqual(add_numbers(2, 3), 5)
-        self.assertEqual(add_numbers(-1, 1), 0)
-        self.assertEqual(add_numbers(0, 0), 0)
-
-    def test_subtract_numbers(self):
-        self.assertEqual(subtract_numbers(5, 3), 2)
-        self.assertEqual(subtract_numbers(0, 1), -1)
-        self.assertEqual(subtract_numbers(-1, -1), 0)
-
-    def test_multiply_numbers(self):
-        self.assertEqual(multiply_numbers(2, 3), 6)
-        self.assertEqual(multiply_numbers(-1, 1), -1)
-        self.assertEqual(multiply_numbers(0, 5), 0)
+# Call the function to actually run the game
+quiz_game()
