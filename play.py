@@ -3,7 +3,9 @@ def quiz_game():
     questions = {
         "What is the capital of France? ": "Paris",
         "What is 2 + 2? ": "4",
-        "What is the largest planet in our solar system? ": "Jupiter"
+        "What is the largest planet in our solar system? ": "Jupiter",
+        "What is the chemical symbol for water? ": "H2O",
+        "Who wrote 'Romeo and Juliet'? ": "Shakespeare"
     }
     
     score = 0

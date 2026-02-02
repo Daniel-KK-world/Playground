@@ -695,7 +695,7 @@
         "kind": 2,
         "importPath": "play",
         "description": "play",
-        "peekOfCode": "def quiz_game():\n    print(\"Welcome to the Quiz Game!\")\n    questions = {\n        \"What is the capital of France? \": \"Paris\",\n        \"What is 2 + 2? \": \"4\",\n        \"What is the largest planet in our solar system? \": \"Jupiter\"\n    }\n    score = 0\n    for question, answer in questions.items():\n        user_answer = input(question)",
+        "peekOfCode": "def quiz_game():\n    print(\"Welcome to the Quiz Game!\")\n    questions = {\n        \"What is the capital of France? \": \"Paris\",\n        \"What is 2 + 2? \": \"4\",\n        \"What is the largest planet in our solar system? \": \"Jupiter\",\n        \"What is the chemical symbol for water? \": \"H2O\",\n        \"Who wrote 'Romeo and Juliet'? \": \"Shakespeare\"\n    }\n    score = 0",
         "detail": "play",
         "documentation": {}
     },
